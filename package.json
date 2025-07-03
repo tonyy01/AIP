@@ -1,0 +1,37 @@
+{
+  "name": "aiport",
+  "version": "0.1.0",
+  "description": "AI-Native Application Protocol",
+  "private": true,
+  "workspaces": [
+    "sdk/typescript",
+    "demos/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "start:demo": "cd demos/todo-app && npm run dev",
+    "client:demo": "cd demos/todo-app && npm run client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiport/aiport.git"
+  },
+  "keywords": [
+    "ai",
+    "protocol",
+    "agent",
+    "application",
+    "api"
+  ],
+  "author": "AIPort Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aiport/aiport/issues"
+  },
+  "homepage": "https://github.com/aiport/aiport#readme",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+} 
